@@ -3,16 +3,28 @@ using System.Collections;
 
 
 public class GunScript : MonoBehaviour {
+	//gun customizable aspects
+	//shoting range
 	public float gunRange =50f;
+	//recoil kick
 	public float maxRecoilX = -20f;
 	public float maxRecoilY = 20f;
+	//speed of recoil
 	public float recoilSpeed = 5f;
+	//recovery time to original position
 	public float recoverSpeed = 3f;
+	//kick per shot
 	public float recoilAmount = 0.1f;
+	//number of seconds before next bullet
 	public float rateOfFire = 10f;
+	//base bullet hole texture
 	public GameObject bulletHoleTex;
-
+	//recoiler controls cemra offset for recoil kick
 	public GameObject Recoiller;
+	//number of bullets per clip
+	public int clipSize = 30;
+	//reload time
+	public float reloadTime;
 
 	private bool b_AllowFire = true;
 	// Use this for initialization
@@ -57,4 +69,9 @@ public class GunScript : MonoBehaviour {
 		GetComponent<MuzzleFlash> ().muzzleFlashPlay ();
 
 		}
+
+	void reloadWeapon(){
+		Debug.Log ("reloading");
+
+	}
 }
