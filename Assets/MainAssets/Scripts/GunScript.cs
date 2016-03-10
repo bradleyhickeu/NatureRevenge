@@ -10,6 +10,7 @@ public class GunScript : MonoBehaviour {
 	public float recoverSpeed = 3f;
 	public float recoilAmount = 0.1f;
 	public float rateOfFire = 10f;
+	public GameObject bulletHoleTex;
 
 	public GameObject Recoiller;
 

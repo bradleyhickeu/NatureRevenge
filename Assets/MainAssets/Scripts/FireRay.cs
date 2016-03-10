@@ -41,6 +41,11 @@ public class FireRay : MonoBehaviour {
 				hit.collider.gameObject.GetComponent<Health> ().DoDamage (50);
 				hit.collider.gameObject.GetComponent<Health> ().ShowBloodSplash (hit.point);
 			}
+			/*if (hit.collider.tag == "MetalEnvironment") {
+				 
+				GameObject bullethole = Instantiate ((GetComponentInChildren<GunScript> ().bulletHoleTex), hit.point, Quaternion.FromToRotation (Vector3.forward, hit.normal)) as GameObject;
+				bullethole.transform.parent = hit.collider.gameObject.transform;			
+			}*/
 
 
 			} else {
