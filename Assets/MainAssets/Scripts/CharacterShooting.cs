@@ -5,7 +5,7 @@ public class CharacterShooting : MonoBehaviour {
 	//aim down sights script
 	public GameObject gun;
 	//camera field of view floats
-	float  nextPos = 0.0f;
+	float  nextPos = 0.0f;//hakjfeshdjfkjewklrfkjafhwqdeu
 	float  nextField = 40.0f;
 	float nextPos2 = -0.2f;
 
