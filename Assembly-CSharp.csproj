@@ -59,10 +59,12 @@
      <Compile Include="Assets\MainAssets\Scripts\GermanDeath.cs" />
      <Compile Include="Assets\MainAssets\Scripts\GunScript.cs" />
      <Compile Include="Assets\MainAssets\Scripts\Health.cs" />
+     <Compile Include="Assets\MainAssets\Scripts\Menuscene.cs" />
      <Compile Include="Assets\MainAssets\Scripts\MuzzleFlash.cs" />
      <Compile Include="Assets\MainAssets\Scripts\Particle.cs" />
      <Compile Include="Assets\MainAssets\Scripts\ParticleSys.cs" />
      <Compile Include="Assets\MainAssets\Scripts\ParticleSystemAutoDestruct.cs" />
+     <Compile Include="Assets\MainAssets\Scripts\PlayerStats.cs" />
      <Compile Include="Assets\MainAssets\Scripts\Recoil.cs" />
      <Compile Include="Assets\MainAssets\Scripts\SpawnEnemies.cs" />
      <None Include="Assets\Downloads\0000 ats V2 package\readme_treeBarkShader.txt" />
