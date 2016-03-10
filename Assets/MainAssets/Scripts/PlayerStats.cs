@@ -19,7 +19,7 @@ public class PlayerStats : MonoBehaviour {
 		}
 		if (healthValue <= 30) 
 		{
-			Instantiate(blood, new Vector3 (this.transform.position.x, this.transform.position.y), Quaternion.identity);
+			//Instantiate(blood, new Vector3 (this.transform.position.x, this.transform.position.y), Quaternion.identity);
 			//blood.transform.localPosition.x;
 		}
 	}
