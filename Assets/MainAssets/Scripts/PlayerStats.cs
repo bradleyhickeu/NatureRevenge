@@ -13,7 +13,7 @@ public class PlayerStats : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		healthValue = healthValue + 0.01f; //health gradually increases during gameplay
-		Debug.Log (healthValue);
+		//Debug.Log (healthValue);
 		if (healthValue > 99) { //if health is more than 99
 			healthValue = 100; //make health 100 (done this so health doesn't surpass 100
 		}

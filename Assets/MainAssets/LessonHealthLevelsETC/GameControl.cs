@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class GameControl : MonoBehaviour {
-	private int Health = 100;
-	private int Ammo = 10;
-	private int Score = 0;
+	public int Health = 100;
+	public int Ammo = 0;
+	public int Reserve = 0;
 	public Vector2 pos = new Vector2 (210,10);
 	public Vector2 size = new Vector2 (550,40);
 	public Texture2D emptyHealth;
 	public Texture2D fullHealth;
+	public Text AmmoText;
+	public Text ReserveText;
 
 
 
@@ -29,41 +32,16 @@ public class GameControl : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.H))
-		{
-			//make the health go down!!
-			Debug.Log ("h key pressed");
-			ChangeHealth (-1);
-
-		}
-		if (Input.GetKey(KeyCode.J))
-		{
-			//make the health go down!!
-			Debug.Log ("j key pressed");
-			ChangeHealth (1);
-
-		}
-		if (Input.GetKeyDown(KeyCode.A))
-		{
-			//make the health go down!!
-			Debug.Log ("a key pressed");
-			ChangeAmmo (-1);
-
-		}
-		if (Input.GetKeyDown(KeyCode.S))
-		{
-			//make the health go down!!
-			Debug.Log ("s key pressed");
-			ChangeScore (1);
-
-		}
+		AmmoText.text ="Ammo:" + Ammo ;
+		ReserveText.text = "Reserve:" + Reserve;
+	
 	}
 
-	void OnGUI()
+	/*void OnGUI()
 	{
 		GUI.Label (new Rect (10, 10, 100, 50), "Health:" + Health);
 		GUI.Label (new Rect (10, 20, 100, 50), "Ammo:" + Ammo);
-		GUI.Label (new Rect (10, 30, 100, 50), "Score:" + Score);
+		GUI.Label (new Rect (10, 30, 100, 50), "Reserve:" + Reserve);
 
 		GUI.BeginGroup(new Rect(pos.x,pos.y,size.x,size.y));
 		GUI.DrawTexture (new Rect (0, 0, size.x, size.y), emptyHealth);
@@ -77,7 +55,7 @@ public class GameControl : MonoBehaviour {
 
 
 	}
-
+*/
 
 
 
@@ -98,16 +76,25 @@ public class GameControl : MonoBehaviour {
 		if (Ammo < 0) {
 			Ammo = 0;		
 		}
-		if (Ammo > 10) {
-			Ammo = 10;		
-		}
+
 	}
 
-	public void ChangeScore(int amount){
-		Score += amount;
-		if (Score < 0) {
-			Score = 0;		
+	public int ChangeReserve(int amount){
+		Debug.Log ("amount called for :"+amount);
+		if (amount > Reserve) {
+			Debug.Log ("amount given a:"+Reserve);
+			return Reserve;
+
+			Reserve -= Reserve;
+
+		} else {
+			Debug.Log ("amount given b :"+amount);
+			Reserve -= amount;
+			return amount;
+
 		}
+
+
 
 	}
 }
