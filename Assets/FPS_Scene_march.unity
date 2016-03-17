@@ -659,8 +659,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0696d3b46cce8064ca215618998031e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blood: {fileID: 149862, guid: 10047b468afd4aa4c8348395930cb2fc, type: 2}
-  healthValue: 15
+  blood: {fileID: 125996, guid: 80c7d77a1083c924bb4d34469de15715, type: 2}
+  healthValue: 20
+  bloodOnScreen: 0
 --- !u!1 &1024146998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1200,8 @@ MonoBehaviour:
   rateOfFire: 0.1
   bulletHoleTex: {fileID: 192900, guid: bb09606a10985f246b54325acc0eabd6, type: 2}
   Recoiller: {fileID: 1906682637}
+  clipSize: 30
+  reloadTime: 0
 --- !u!1 &1906682637
 GameObject:
   m_ObjectHideFlags: 0
