@@ -884,6 +884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0696d3b46cce8064ca215618998031e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   blood: {fileID: 149862, guid: 10047b468afd4aa4c8348395930cb2fc, type: 2}
   healthValue: 15
 --- !u!114 &826226968
@@ -932,6 +933,15 @@ MonoBehaviour:
   shaderFXAAPreset3: {fileID: 4800000, guid: c182fa94a5a0a4c02870641efcd38cd5, type: 3}
   shaderFXAAII: {fileID: 4800000, guid: cd5b323dcc592457790ff18b528f5e67, type: 3}
   shaderFXAAIII: {fileID: 4800000, guid: c547503fff0e8482ea5793727057041c, type: 3}
+=======
+  blood: {fileID: 125996, guid: 80c7d77a1083c924bb4d34469de15715, type: 2}
+  blood2: {fileID: 138716, guid: d40bf418b3e4b544ba193b73f901b9cf, type: 2}
+  blood3: {fileID: 158966, guid: c088a347a459b8047a4120c9bc22b28a, type: 2}
+  healthValue: 8
+  bloodOnScreen: 0
+  bloodOnScreen2: 0
+  bloodOnScreen3: 0
+>>>>>>> origin/master
 --- !u!1 &1024146998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1455,7 +1465,11 @@ MonoBehaviour:
   bulletHoleTex: {fileID: 192900, guid: bb09606a10985f246b54325acc0eabd6, type: 2}
   Recoiller: {fileID: 1906682637}
   clipSize: 30
+<<<<<<< HEAD
   reloadTime: 2.5
+=======
+  reloadTime: 0
+>>>>>>> origin/master
 --- !u!1 &1906682637
 GameObject:
   m_ObjectHideFlags: 0
