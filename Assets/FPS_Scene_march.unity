@@ -660,8 +660,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blood: {fileID: 125996, guid: 80c7d77a1083c924bb4d34469de15715, type: 2}
-  healthValue: 20
+  blood2: {fileID: 138716, guid: d40bf418b3e4b544ba193b73f901b9cf, type: 2}
+  blood3: {fileID: 158966, guid: c088a347a459b8047a4120c9bc22b28a, type: 2}
+  healthValue: 8
   bloodOnScreen: 0
+  bloodOnScreen2: 0
+  bloodOnScreen3: 0
 --- !u!1 &1024146998
 GameObject:
   m_ObjectHideFlags: 0
