@@ -885,7 +885,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blood: {fileID: 149862, guid: 10047b468afd4aa4c8348395930cb2fc, type: 2}
+  blood2: {fileID: 149862, guid: 10047b468afd4aa4c8348395930cb2fc, type: 2}
+  blood3: {fileID: 149862, guid: 10047b468afd4aa4c8348395930cb2fc, type: 2}
   healthValue: 15
+  bloodOnScreen: 0
+  bloodOnScreen2: 0
+  bloodOnScreen3: 0
 --- !u!114 &826226968
 MonoBehaviour:
   m_ObjectHideFlags: 0
